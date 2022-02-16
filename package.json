@@ -2,15 +2,18 @@
   "name": "web3js-training",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./dist/app.js",
+  "type": "module",
   "scripts": {
+    "start": "tsc && node ./dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^4.4.4"
-  },  
+    "typescript": "^4.4.4",
+    "web3": "^1.7.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -19,5 +22,5 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1"
-  }  
+  }
 }
